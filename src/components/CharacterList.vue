@@ -1,13 +1,29 @@
 <script>
+import Card from './Card.vue'
+import {store} from '../store.js'
 export default {
-  
+  components:{
+    Card
+  },
+  data() {
+    return {
+        store
+    }
+  },
 }
 </script>
 <template lang="">
-<div>
-
+<div class="container-card">
+    <Card v-for="(element, index) in store.cardsList" ::key="index" :card="element"></Card>
 </div>
 </template>
-<style lang="">
-
+<style lang="scss">
+    .container-card{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        width: 1200px;
+        background-color: white;
+        padding: 3rem;
+    }
 </style>

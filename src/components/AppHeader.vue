@@ -12,12 +12,12 @@ export default {
 header{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 1rem 0;
 
     .header-content{
         display: flex;
-        align-items: center;
+        align-items:flex-start;
     }
 }
 </style>

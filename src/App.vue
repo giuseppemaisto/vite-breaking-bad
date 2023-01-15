@@ -30,9 +30,9 @@
     }
     </script>
 <template lang="">
-  <div>
-    
-  </div>
+  <AppHeader></AppHeader>
+  <AppContent></AppContent>
+  <CharacterList></CharacterList>
 </template>
 <style lang="scss">
   @use '../src/assets/styles/generals.scss'
