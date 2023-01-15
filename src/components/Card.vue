@@ -14,14 +14,20 @@
 </template>
 <style lang="scss">
 .card{
+    background-color: bisque;
     width: calc(100% / 5 );
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-
+    margin: 1rem;
     img{
         width: 80%;
+    }
+
+    h4{
+        font-weight: 600;
+        padding: 2rem;
     }
 }
     

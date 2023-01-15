@@ -21,7 +21,7 @@ export default {
     .container-card{
         display: flex;
         flex-wrap: wrap;
-        justify-content: start;
+        justify-content: center;
         width: 1200px;
         background-color: white;
         padding: 3rem;
