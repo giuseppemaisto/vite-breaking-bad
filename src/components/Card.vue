@@ -12,9 +12,12 @@
         <span >{{card.archetype}}</span>
     </div>
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
+
+
+
 .card{
-    background-color: bisque;
+    background-color: #d48f38;
     width: calc(100% / 5 );
     display: flex;
     flex-direction: column;

@@ -25,12 +25,13 @@ export default {
 </main>
 </template>
 <style lang="scss">
+
     .container{
         width:100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: bisque;
+        background-color: #d48f38;
 
         .container-select{
             width: 1200px;
