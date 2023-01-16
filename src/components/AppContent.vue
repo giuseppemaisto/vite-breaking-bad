@@ -1,6 +1,8 @@
 <script>
 import CharacterList from './CharacterList.vue';
+import AppSelect from './AppSelect.vue'
 import {store} from "../store.js"
+import axios from 'axios'
 export default {
   data(){
     return {
@@ -8,18 +10,23 @@ export default {
     }
   },
   components:{
-    CharacterList
+    CharacterList,
+    AppSelect
+  },
+  methods:{
+    selectArch(archetipo){
+        let newUrl = store.urlcompleto + 'archetype=' + archetipo
+        axios.get(newUrl).then((response)=>{
+            store.cardsList = response.data.data
+        })
+    }
   }
 }
 </script>
 <template lang="">
 <main>
     <div class="container">
-        <div class="container-select">
-            <select name="alien" id="">
-                <option value="alien">alien</option>
-            </select>
-        </div>
+       <AppSelect @selectArchName="selectArch" :option="store.archetypeList"></AppSelect>
         <CharacterList></CharacterList>
     </div>
 </main>
@@ -33,16 +40,6 @@ export default {
         align-items: center;
         background-color: #d48f38;
 
-        .container-select{
-            width: 1400px;
-            padding: 1rem 0;
-
-            .select{
-                border: none;
-                padding: 1rem;
-                width: 100px;
-                font-size: 1rem;
-            }
-        }
+       
     }
 </style>

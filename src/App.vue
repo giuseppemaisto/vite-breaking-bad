@@ -24,6 +24,10 @@
           axios.get(store.url).then((response) => {
             store.cardsList = response.data.data
           })
+
+          axios.get(store.urlSecondo).then((response)=>{
+            store.archetypeList = response.data 
+          })
         }
       },
       
@@ -32,7 +36,7 @@
 <template lang="">
   <AppHeader></AppHeader>
   <AppContent></AppContent>
-  <CharacterList></CharacterList>
+  
 </template>
 <style lang="scss">
   @use '../src/assets/styles/generals.scss'
