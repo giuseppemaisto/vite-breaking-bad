@@ -5,7 +5,7 @@ export default {
 </script>
 <template lang="">
 <header>
-    <h1>OU-GI-OH Api</h1>
+    <h1>YOU-GI-OH Api</h1>
 </header>
 </template>
 <style lang="scss">
