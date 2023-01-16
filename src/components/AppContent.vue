@@ -34,7 +34,7 @@ export default {
         background-color: #d48f38;
 
         .container-select{
-            width: 1200px;
+            width: 1400px;
             padding: 1rem 0;
 
             .select{

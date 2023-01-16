@@ -18,7 +18,7 @@
 
 .card{
     background-color: #d48f38;
-    width: calc(100% / 5 );
+    width: calc(100% / 5 - 2rem);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,6 +31,7 @@
     h4{
         font-weight: 600;
         padding: 2rem;
+        color: white;
     }
 }
     

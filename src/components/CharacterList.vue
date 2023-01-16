@@ -22,8 +22,8 @@ export default {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        width: 1200px;
+        width: 1400px;
         background-color: white;
-        padding: 3rem;
+        padding: 2rem;
     }
 </style>
